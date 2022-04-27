@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "6268d0e1f04af3f240c7f5ab"
+  },
+  "email": "tnquang@abc.com",
+  "password": "$2a$08$pav..cD8.Xmg9PM/K8WLw.x94hejfPr8KC557RW/hrQoyP7tguEai",
+  "username": "Trần Nhựt Quang"
+},{
+  "_id": {
+    "$oid": "6268d3e9f04af3f240c7f7ad"
+  },
+  "email": "quang@abc.com",
+  "password": "$2a$08$VWNAF0RBDxFY681VLvYfreK86en8ePTzisAqd2Lo2uFNFArWz8eaC",
+  "username": "Quang"
+},{
+  "_id": {
+    "$oid": "6268d55cf04af3f240c7f89a"
+  },
+  "email": "nquang@abc.com",
+  "password": "$2a$08$9yzXWs98vZZ9k8kIH3bfWevr2qMo4LZJSdz9DrY984qMZNgbnfFJm",
+  "username": "Nhựt Quang"
+}]

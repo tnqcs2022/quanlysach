@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "6268ceeef04af3f240c7f46c"
+  },
+  "author": " Dale Carnegie",
+  "category": "Sách tự lực",
+  "ownerId": {
+    "$oid": "62639fa097ec148e8e5f2430"
+  },
+  "publishDate": "1936",
+  "publisher": "Simon and Schuster",
+  "title": "Đắc Nhân Tâm",
+  "favorite": false
+},{
+  "_id": {
+    "$oid": "6268d10df04af3f240c7f5c9"
+  },
+  "author": "Dale Carnegie",
+  "category": "Sách tự lực",
+  "ownerId": {
+    "$oid": "6268d0e1f04af3f240c7f5ab"
+  },
+  "publishDate": "1936",
+  "publisher": "Simon and Schuster",
+  "title": "Đắc nhân tâm",
+  "favorite": true
+},{
+  "_id": {
+    "$oid": "6268d2d2f04af3f240c7f6f9"
+  },
+  "author": "Stephen Covey",
+  "category": "Phi hư cấu",
+  "ownerId": {
+    "$oid": "6268d0e1f04af3f240c7f5ab"
+  },
+  "publishDate": "1989",
+  "publisher": "Free Press",
+  "title": "7 thói quen hiệu quả",
+  "favorite": false
+},{
+  "_id": {
+    "$oid": "6268d393f04af3f240c7f773"
+  },
+  "author": "Paulo Coelho",
+  "category": "Tiểu thuyết",
+  "ownerId": {
+    "$oid": "6268d0e1f04af3f240c7f5ab"
+  },
+  "publishDate": "1988",
+  "publisher": "Editora Rocco Ltda.",
+  "title": "Nhà giả kim",
+  "favorite": false
+},{
+  "_id": {
+    "$oid": "6268d499f04af3f240c7f81d"
+  },
+  "author": "Rosie Nguyễn",
+  "category": "Tâm Lý - Kỹ Năng Sống",
+  "ownerId": {
+    "$oid": "6268d3e9f04af3f240c7f7ad"
+  },
+  "publishDate": "2016",
+  "publisher": "Nhà Xuất Bản Hội Nhà Văn",
+  "title": "Tuổi Trẻ Đáng Giá Bao Nhiêu?",
+  "favorite": true
+},{
+  "_id": {
+    "$oid": "6268d501f04af3f240c7f85c"
+  },
+  "author": "Nguyễn Nhật Ánh",
+  "category": "Truyện thiếu nhi",
+  "ownerId": {
+    "$oid": "6268d3e9f04af3f240c7f7ad"
+  },
+  "publishDate": "2008",
+  "publisher": "Nhà xuất bản Trẻ",
+  "title": "Cho tôi xin 1 vé đi tuổi thơ",
+  "favorite": true
+},{
+  "_id": {
+    "$oid": "6268d6eef04af3f240c7f994"
+  },
+  "author": "Nguyễn Nhật Ánh",
+  "category": "Tiểu thuyết",
+  "ownerId": {
+    "$oid": "6268d55cf04af3f240c7f89a"
+  },
+  "publishDate": "2010",
+  "publisher": "Nhà xuất bản Trẻ",
+  "title": "Tôi thấy hoa vàng trên cỏ xanh",
+  "favorite": true
+},{
+  "_id": {
+    "$oid": "6268d817f04af3f240c7fa4e"
+  },
+  "author": "David J. Schwartz",
+  "category": "Tâm Lý - Kỹ Năng Sống",
+  "ownerId": {
+    "$oid": "6268d55cf04af3f240c7f89a"
+  },
+  "publishDate": "1959",
+  "publisher": "First News",
+  "title": "Dám nghĩ lớn",
+  "favorite": false
+}]
