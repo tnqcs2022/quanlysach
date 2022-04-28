@@ -9,8 +9,8 @@ exports.create = async (req, res, next) => {
 	}
 
 	try {
-		const contactService = new BookService(req.userId, MongoDB.client);
-		const document = await contactService.create(req.body);
+		const bookService = new BookService(req.userId, MongoDB.client);
+		const document = await bookService.create(req.body);
 		return res.send(document);
 	} catch (error) {
 		console.log(error);
@@ -25,12 +25,12 @@ exports.findAll = async (req, res, next) => {
 	let documents = [];
 
 	try {
-		const contactService = new BookService(req.userId, MongoDB.client);
+		const bookService = new BookService(req.userId, MongoDB.client);
 		const { title } = req.query;
 		if (title) {
-			documents = await contactService.findByName(title);
+			documents = await bookService.findByName(title);
 		} else {
-			documents = await contactService.find({});
+			documents = await bookService.find({});
 		}
 	} catch (error) {
 		console.log(error);
@@ -45,8 +45,8 @@ exports.findAll = async (req, res, next) => {
 // Find a single book with an id
 exports.findOne = async (req, res, next) => {
 	try {
-		const contactService = new BookService(req.userId, MongoDB.client);
-		const document = await contactService.findById(req.params.id);
+		const bookService = new BookService(req.userId, MongoDB.client);
+		const document = await bookService.findById(req.params.id);
 		if (!document) {
 			return next(new ApiError(404, "Book not found"));
 		}
@@ -69,8 +69,8 @@ exports.update = async (req, res, next) => {
 	}
 
 	try {
-		const contactService = new BookService(req.userId, MongoDB.client);
-		const document = await contactService.update(req.params.id, req.body);
+		const bookService = new BookService(req.userId, MongoDB.client);
+		const document = await bookService.update(req.params.id, req.body);
 		if (!document) {
 			return next(new ApiError(404, "Book not found"));
 		}
@@ -86,8 +86,8 @@ exports.update = async (req, res, next) => {
 // Delete a book with the specified id in the request
 exports.delete = async (req, res, next) => {
 	try {
-		const contactService = new BookService(req.userId, MongoDB.client);
-		const document = await contactService.delete(req.params.id);
+		const bookService = new BookService(req.userId, MongoDB.client);
+		const document = await bookService.delete(req.params.id);
 		if (!document) {
 			return next(new ApiError(404, "Book not found"));
 		}
@@ -106,8 +106,8 @@ exports.delete = async (req, res, next) => {
 // Delete all books of a user from the database
 exports.deleteAll = async (req, res, next) => {
 	try {
-		const contactService = new BookService(req.userId, MongoDB.client);
-		const deletedCount = await contactService.deleteAll();
+		const bookService = new BookService(req.userId, MongoDB.client);
+		const deletedCount = await bookService.deleteAll();
 		return res.send({
 			message: `${deletedCount} books were deleted successfully`,
 		});
@@ -121,8 +121,8 @@ exports.deleteAll = async (req, res, next) => {
 // Find all favorite books of a user
 exports.findAllFavorite = async (req, res, next) => {
 	try {
-		const contactService = new BookService(req.userId, MongoDB.client);
-		const documents = await contactService.findFavorite();
+		const bookService = new BookService(req.userId, MongoDB.client);
+		const documents = await bookService.findFavorite();
 		return res.send(documents);
 	} catch (error) {
 		return next(

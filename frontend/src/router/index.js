@@ -37,7 +37,7 @@ const routes = [
 	{
 		path: "/",
 		name: "bookapp",
-		component: () => import("@/views/BookBook.vue"),
+		component: () => import("@/views/Book.vue"),
 	},
 	{
 		path: "/books/:id",

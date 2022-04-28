@@ -127,7 +127,7 @@ export default {
 		submitBook() {
 			this.$emit("submit:book", this.bookLocal);
 			if (this.resetAfterSubmit) {
-				this.$refs.contactForm.resetForm();
+				this.$refs.bookForm.resetForm();
 			}
 		},
 		deleteBook() {

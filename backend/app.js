@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const contactsRouter = require("./app/routes/book.route");
+const booksRouter = require("./app/routes/book.route");
 const authRouter = require("./app/routes/auth.route");
 const ApiError = require("./app/api-error");
 
@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 	res.json({ message: "Welcome to book application." });
 });
 
-app.use("/api/books", contactsRouter);
+app.use("/api/books", booksRouter);
 app.use("/api/auth", authRouter);
 
 // handle 404 response
